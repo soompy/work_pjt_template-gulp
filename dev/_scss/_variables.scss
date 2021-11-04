@@ -1,0 +1,30 @@
+@charset "utf-8";
+// ============================================================ 
+// _variables.scss 
+// 공통 사용 변수
+// ============================================================ 
+
+// font
+$noto : 'Noto Sans Korean';
+$dot : 'dotum';
+
+
+
+
+// Breakpoints
+$breakpoint-tablet : 1024px;
+$breakpoint-mobile : 320px;
+
+@mixin tablet {
+    @media (max-width: #{$breakpoint-tablet}) {
+      @content;
+    }
+}
+  
+@mixin mobile {
+    @media (max-width: #{$breakpoint-mobile}) {
+      @content;
+    }
+}
+
+

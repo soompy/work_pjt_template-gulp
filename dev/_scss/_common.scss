@@ -1,0 +1,28 @@
+@charset "utf-8";
+// 확장자는 생략 가능 @import "_variables.scss" 
+// 여러 개의 파일을 한번에 임포트
+@import "_mixin";
+@import "_variables";
+
+
+
+/* 공통으로 사용될 코드 */
+
+
+
+
+header{font-size: 30px;}
+footer{font-size: 30px;}
+
+
+@include tablet{
+    header{font-size:t-vw(30px); font-family: #{$noto};}
+    footer{font-size:t-vw(30px);}
+}
+
+@include mobile{
+    header{font-size:m-vw(60px);}
+    footer{font-size:m-vw(60px)}
+}
+
+

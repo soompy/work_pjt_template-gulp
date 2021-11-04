@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "_mixin";
+@import "_variables";
+
+
+
+/* 메인 페이지 관련 */
+
+
+#wrap{
+    position: relative;
+    text-outline: 0 0 #000;
+    
+
+    & .inner{width:1280px; margin: 0 auto}
+} 
+
+
+.container{
+    font-family:#{$noto};
+    height:500px; width:500px; 
+   
+    & .inner{
+        font-size: 24px; box-sizing: border-box
+
+    };
+
+}
+
+
+
+@include tablet {
+    
+    .container{
+        & .inner{
+            font-family:#{$noto};
+            font-size: t-vw(30px); 
+        };
+    }
+}
+
+@include mobile {
+
+    .container{
+        & .inner{
+            font-size: m-vw(30px , 320); 
+            border:m-vw(1px) solid red;
+        };
+    
+    }
+}
+
+
+
