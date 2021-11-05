@@ -1,10 +1,11 @@
+// const gulp = require('gulp');
 const gulp = require('gulp');
 
 const fileinclude = require('gulp-file-include');
 const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const autoprefixer  = require('gulp-autoprefixer');
-const scss = require('gulp-sass');
+const scss = require('gulp-dart-sass');
 const cssbeautify = require('gulp-cssbeautify');
 
 const buffer = require('vinyl-buffer');
